@@ -1,0 +1,230 @@
+:root {
+    --bg: #07111d;
+    --card: #111b27;
+    --orange: #ff5a1f;
+    --white: #fff;
+    --text: #a9b3bf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+    line-height: 1.7;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title h2 {
+    font-size: 3rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.title p {
+    color: var(--text);
+}
+
+header {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+.back-btn,
+.hero-btn,
+.plan-btn {
+    background: var(--orange);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.back-btn:hover,
+.hero-btn:hover,
+.plan-btn:hover {
+    background: white;
+    color: var(--orange);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto auto 30px;
+    color: var(--text);
+}
+
+.plan-grid,
+.feature-grid,
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.plan-card,
+.feature-card,
+.testimonial-card,
+.faq-box,
+.bmi-box {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.plan-card {
+    position: relative;
+    text-align: center;
+}
+
+.plan-card h1 {
+    font-size: 4rem;
+    color: var(--orange);
+}
+
+.plan-card ul {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.plan-card li {
+    margin-bottom: 15px;
+}
+
+.feature-card,
+.testimonial-card {
+    transition: .4s;
+}
+
+.feature-card:hover,
+.testimonial-card:hover,
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--orange);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.bmi-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bmi-box input {
+    flex: 1;
+    min-width: 200px;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bmi-box button {
+    padding: 18px 35px;
+    background: var(--orange);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq-box h3 {
+    margin-top: 25px;
+    color: var(--orange);
+}
+
+.faq-box p {
+    color: var(--text);
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+footer {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    text-align: center;
+    color: var(--text);
+}
+
+@media(max-width:768px) {
+
+    .hero h1,
+    .cta h1 {
+        font-size: 2.5rem;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bmi-box {
+        flex-direction: column;
+    }
+
+}
+
+#result {
+    width: 100%;
+    margin-top: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--orange);
+}

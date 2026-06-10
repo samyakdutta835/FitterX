@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join FitterX</title>
+
+    <link rel="stylesheet" href="../css/join.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700;800;900&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <a href="../../index.html" class="logo">
+                FitterX
+            </a>
+
+            <a href="../../index.html" class="back-btn">
+                ← Back Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>
+                Transform Your Body With FitterX
+            </h1>
+
+            <p>
+
+                Choose the perfect membership and start your fitness journey today.
+
+            </p>
+
+            <a href="#plans" class="hero-btn">
+                Join Today
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MEMBERSHIP -->
+
+    <section class="plans" id="plans">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Membership Plans</h2>
+
+                <p>
+                    Choose a plan that suits your goals.
+                </p>
+
+            </div>
+
+
+
+            <div class="plan-grid">
+
+                <!-- Basic -->
+
+                <div class="plan-card">
+
+                    <h3>Basic</h3>
+
+                    <h1>₹999</h1>
+
+                    <span>/ Month</span>
+
+                    <ul>
+
+                        <li>✔ Gym Access</li>
+
+                        <li>✔ Locker Facility</li>
+
+                        <li>✔ Cardio Area</li>
+
+                        <li>✔ Free WiFi</li>
+
+                    </ul>
+
+                    <a href="#" class="plan-btn">
+                        Join Basic
+                    </a>
+
+                </div>
+
+
+
+                <!-- Premium -->
+
+                <div class="plan-card featured">
+
+                    <div class="badge">
+                        Most Popular
+                    </div>
+
+                    <h3>Premium</h3>
+
+                    <h1>₹1999</h1>
+
+                    <span>/ Month</span>
+
+                    <ul>
+
+                        <li>✔ Personal Trainer</li>
+
+                        <li>✔ Diet Plan</li>
+
+                        <li>✔ Group Classes</li>
+
+                        <li>✔ Progress Tracking</li>
+
+                        <li>✔ Locker Facility</li>
+
+                    </ul>
+
+                    <a href="#" class="plan-btn">
+                        Join Premium
+                    </a>
+
+                </div>
+
+
+
+                <!-- Elite -->
+
+                <div class="plan-card">
+
+                    <h3>Elite</h3>
+
+                    <h1>₹2999</h1>
+
+                    <span>/ Month</span>
+
+                    <ul>
+
+                        <li>✔ Everything Included</li>
+
+                        <li>✔ 24/7 Access</li>
+
+                        <li>✔ Personal Trainer</li>
+
+                        <li>✔ Nutrition Coaching</li>
+
+                        <li>✔ Priority Support</li>
+
+                    </ul>
+
+                    <a href="#" class="plan-btn">
+                        Join Elite
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Why Choose FitterX?</h2>
+
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <h3>🏋 Expert Trainers</h3>
+
+                    <p>
+                        Certified professionals to guide your transformation.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <h3>🥗 Nutrition Plans</h3>
+
+                    <p>
+                        Customized meal plans to support your goals.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <h3>💪 Modern Equipment</h3>
+
+                    <p>
+                        Train with premium quality machines and weights.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <h3>⏰ Flexible Timings</h3>
+
+                    <p>
+                        Morning and evening batches available.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BMI CALCULATOR -->
+
+    <section class="bmi">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>BMI Calculator</h2>
+
+                <p>Know your Body Mass Index.</p>
+
+            </div>
+
+            <div class="bmi-box">
+
+                <input type="number" id="height" placeholder="Height (cm)">
+
+                <input type="number" id="weight" placeholder="Weight (kg)">
+
+                <button onclick="calculateBMI()">
+                    Calculate BMI
+                </button>
+
+                <div id="result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>What Our Members Say</h2>
+
+            </div>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+
+                    <h3>⭐⭐⭐⭐⭐</h3>
+
+                    <p>
+                        "Best gym I've ever joined. Amazing trainers and atmosphere."
+                    </p>
+
+                    <h4>- Rahul Sharma</h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <h3>⭐⭐⭐⭐⭐</h3>
+
+                    <p>
+                        "Premium facilities and very supportive staff."
+                    </p>
+
+                    <h4>- Priya Singh</h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <h3>⭐⭐⭐⭐⭐</h3>
+
+                    <p>
+                        "Helped me completely transform my physique."
+                    </p>
+
+                    <h4>- Arjun Das</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Frequently Asked Questions</h2>
+
+            </div>
+
+            <div class="faq-box">
+
+                <h3>Can beginners join?</h3>
+                <p>Yes, everyone is welcome.</p>
+
+                <h3>Do you provide personal trainers?</h3>
+                <p>Yes, Premium and Elite plans include trainers.</p>
+
+                <h3>Can I cancel my membership?</h3>
+                <p>Yes, anytime.</p>
+
+                <h3>Do you provide diet plans?</h3>
+                <p>Yes, Premium and Elite members receive customized plans.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h1>Become The Best Version Of Yourself</h1>
+
+            <a href="#" class="hero-btn">
+                Join Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 FitterX. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        function calculateBMI() {
+
+            let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value;
+
+            if (height === "" || weight === "") {
+                document.getElementById("result").innerHTML =
+                    "Please enter both height and weight.";
+                return;
+            }
+
+            height = height / 100;
+
+            let bmi = (weight / (height * height)).toFixed(1);
+
+            let category = "";
+
+            if (bmi < 18.5) {
+                category = "Underweight";
+            }
+            else if (bmi < 25) {
+                category = "Normal Weight";
+            }
+            else if (bmi < 30) {
+                category = "Overweight";
+            }
+            else {
+                category = "Obese";
+            }
+
+            document.getElementById("result").innerHTML =
+                "Your BMI is <b>" + bmi + "</b> (" + category + ")";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

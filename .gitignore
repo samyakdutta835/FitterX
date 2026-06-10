@@ -1,0 +1,64 @@
+# ==========================
+# Operating System Files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================
+# VS Code Settings
+# ==========================
+.vscode/
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.temp
+
+# ==========================
+# Node Modules (if added later)
+# ==========================
+node_modules/
+
+# ==========================
+# Environment Files
+# ==========================
+.env
+.env.local
+
+# ==========================
+# Package Manager Files
+# ==========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# Build Folders (for future frameworks)
+# ==========================
+dist/
+build/
+
+# ==========================
+# Cache Files
+# ==========================
+.cache/
+.parcel-cache/
+
+# ==========================
+# MacOS Hidden Files
+# ==========================
+.AppleDouble
+.LSOverride
+
+# ==========================
+# Windows Hidden Files
+# ==========================
+ehthumbs.db
+Icon?

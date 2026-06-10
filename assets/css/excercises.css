@@ -1,0 +1,269 @@
+:root {
+    --bg: #07111d;
+    --card: #111b27;
+    --orange: #ff5a1f;
+    --white: #fff;
+    --text: #a9b3bf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.7;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+header {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.home-btn {
+    text-decoration: none;
+    color: white;
+    background: var(--orange);
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.home-btn:hover {
+    background: white;
+    color: var(--orange);
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: auto;
+    color: var(--text);
+}
+
+.exercise {
+    padding-bottom: 120px;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.exercise-card {
+    background: var(--card);
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-10px);
+}
+
+.exercise-card h2 {
+    color: var(--orange);
+    margin-bottom: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.exercise-card p {
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+.exercise-card a {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.exercise-card a:hover {
+    background: white;
+    color: var(--orange);
+}
+
+footer {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    text-align: center;
+    color: var(--text);
+}
+
+
+
+/* Tablet */
+
+@media(max-width:768px) {
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:576px) {
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .exercise-card {
+        padding: 30px 25px;
+    }
+
+    .home-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+.exercise-card {
+    background: var(--card);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-10px);
+}
+
+.exercise-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.exercise-card:hover img {
+    transform: scale(1.08);
+}
+
+.exercise-card h2 {
+    color: var(--orange);
+    margin: 25px 25px 15px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.exercise-card p {
+    color: var(--text);
+    margin: 0 25px 25px;
+}
+
+.exercise-card a {
+    display: inline-block;
+    margin: 0 25px 30px;
+    padding: 14px 28px;
+    background: var(--orange);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.exercise-card a:hover {
+    background: white;
+    color: var(--orange);
+}
+
+
+
+@media(max-width:768px) {
+
+    .exercise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .exercise-card img {
+        height: 200px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .exercise-card img {
+        height: 180px;
+    }
+
+    .exercise-card h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+.exercise-card {
+    transition: .4s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 90, 31, .2);
+}
+
+.exercise-card:hover img {
+    transform: scale(1.05);
+}

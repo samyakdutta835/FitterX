@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0b0f14;
+    color: white;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+h1 {
+    color: #ff5a1f;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.updated {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+section {
+    background: #111827;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #ff5a1f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+h2 {
+    color: #ff5a1f;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #d4d4d4;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff5a1f;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #ff7b45;
+}
+
+@media(max-width:768px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 50px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    section {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+}
