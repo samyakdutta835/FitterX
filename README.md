@@ -1,7 +1,7 @@
 # 🏋️ FitterX - Responsive Fitness Website
 
 <p align="center">
-  <img src="images/fitness.png" alt="FitZone Logo" width="180">
+  <img src="assets/images/fitnessss.png" alt="FitterX logo" width="180">
 </p>
 
 <p align="center">
